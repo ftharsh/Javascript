@@ -32,6 +32,11 @@ let c = " ok";
 }
 console.log(c); // Prints " ok"
 ```
+output: 
+```
+okk
+ok
+```
 ## Explanation (let):
 
 - `let` has block scope, meaning it's only accessible within the block where it's declared.
@@ -40,9 +45,10 @@ console.log(c); // Prints " ok"
 - The outer `console.log` now accesses the original global `c`, which prints `"ok"`.
 ## Feature Comparison:
 
+## Feature Comparison:
+
 | Feature     | var                               | let                                            |
 |-------------|-----------------------------------|------------------------------------------------|
 | Scope       | Function scope                    | Block scope                                    |
 | Shadowing   | Can shadow outer variables        | Does not shadow outer variables                |
-| When to use | Avoid using var in modern JavaScript | Use let for most variable declarations in modern 
-due to potential scoping issues and confusion.| JavaScript to avoid unexpected behavior and improve code clarity. |
+| When to use | Avoid using var in modern JavaScript due to potential scoping issues and confusion. | Use let for most variable declarations in modern JavaScript to avoid unexpected behavior and improve code clarity. |
